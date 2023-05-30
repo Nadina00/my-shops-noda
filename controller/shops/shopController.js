@@ -7,8 +7,7 @@ const getShops = async (req, res, next) => {
   if (!shops) {
     throw RequestError(400, "Bad Request");
   }
-  console.log(shops);
-  res.json({
+   res.json({
     status: "success",
     code: 200,
     shops,
